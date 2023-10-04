@@ -1,9 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutActivity">
+    tools:context=".AboutActivity"
+    android:orientation="vertical"
+    android:background="#FE7E07">
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutDepan"
+        android:layout_width="372dp"
+        android:layout_height="612dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/white"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="110dp"
+        app:srcCompat="@drawable/read" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="260dp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginTop="300dp"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Us"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="400dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="460dp"
+        android:layout_marginBottom="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageViewCall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="10"
+            app:srcCompat="@drawable/baseline_local_phone_24" />
+
+        <ImageView
+            android:id="@+id/imageViewWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="10"
+            app:srcCompat="@drawable/baseline_web_24" />
+
+        <ImageView
+            android:id="@+id/imageViewLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="10"
+            app:srcCompat="@drawable/baseline_add_location_24" />
+
+
+    </LinearLayout>
+</RelativeLayout>
